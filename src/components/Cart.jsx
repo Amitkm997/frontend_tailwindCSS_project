@@ -41,6 +41,18 @@ export default function Cart() {
                 ₹{cartItems.reduce((acc, cur) => acc + cur.price, 0)}
               </span>
             </h2>
+            
+
+          </div>
+          <div className="mt-10 bg-white p-6 rounded shadow-xl text-center">
+            <h2 className="text-2xl font-bold mb-4">
+              Proceed To Payment
+            </h2>
+
+            {/* <h2 className="text-2xl font-bold"> */}
+              <button>Pay</button>
+            {/* </h2> */}
+            
 
           </div>
         </div>
