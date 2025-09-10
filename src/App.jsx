@@ -5,6 +5,7 @@ import './App.css'
 import { Route,Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Card from "./components/Card";
+import Cart from "./components/Cart";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path='/card' element={<Card/>}></Route>
+        <Route path="/cart" element={<Cart/>}/>
        </Routes>
     </>
    
