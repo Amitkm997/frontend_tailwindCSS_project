@@ -13,7 +13,7 @@ export default function Navbar() {
         <Link to='/' className='text-3xl hover:text-blue-500 font-bold'><IoIosHome/> </Link>
         <Link to='/' className='font-bold hover:text-blue-500'>Home</Link>
         <Link to='/card' className='font-bold hover:text-blue-500'>Products</Link>
-        <Link className='font-bold hover:text-blue-500'>AboutUs</Link>
+        <Link to='/about' className='font-bold hover:text-blue-500'>AboutUs</Link>
      </div>
 
      {/* Spacer to push Login to the right */}

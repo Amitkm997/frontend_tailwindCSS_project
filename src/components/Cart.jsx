@@ -1,8 +1,9 @@
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import CartProduct from './CartProduct';
-
+import { useNavigate } from 'react-router-dom';
 export default function Cart() {
+  let navigate=useNavigate()
   const { cartItems } = useCart();
 
   return (
@@ -11,7 +12,7 @@ export default function Cart() {
       {cartItems.length === 0 ? (
         <div className="flex flex-col items-center justify-center mt-20">
           <h1 className="font-bold text-5xl text-gray-700 mb-8 text-center">
-            Your Cart is Empty
+            Your Cart is Empty!
           </h1>
           <img
             className="w-1/3 h-64 object-contain"
@@ -50,7 +51,7 @@ export default function Cart() {
             </h2>
 
             {/* <h2 className="text-2xl font-bold"> */}
-              <button>Pay</button>
+              <button className=" w-full border px-4 bg-blue-300 transition hover:bg-blue-400" onClick={()=>navigate('/qr')}>Pay</button>
             {/* </h2> */}
             
 
